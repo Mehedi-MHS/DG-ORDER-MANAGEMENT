@@ -1,3 +1,7 @@
+---
+// src/layouts/Layout.astro
+import "bootstrap/dist/css/bootstrap.min.css";
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -6,9 +10,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
+	
 	</head>
 	<body>
-		<slot />
+		<slot/>
+	
 	</body>
 </html>
 
