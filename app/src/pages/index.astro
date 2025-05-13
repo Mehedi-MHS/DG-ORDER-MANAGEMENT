@@ -1,8 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import TestContainer from '../components/Header';
+import OrderItemBox from '../components/OrderItemBox';
 ---
 
 <Layout>
-	<TestContainer slot='left'/>
+	
+	<Fragment slot='left'>
+		<TestContainer/>
+		<OrderItemBox OrderNumber={"AF102025"} Name={'নোয়াখালী আধুনিক চক্ষু হাসপাতাল'} Address={'পূর্ববাজার, চৌমুহনী, নোয়াখালী'} Date={'১৩ মে ২০২৫ ইং'}/>
+	</Fragment>
+	
 </Layout>
